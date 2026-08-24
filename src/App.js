@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React , {useState} from "react";
 
@@ -19,6 +18,7 @@ function App() {
       }
 
       try{
+        // eslint-disable-next-line no-eval
         const answer=eval(expression);
         setResult(String(answer));
       }catch(error){
