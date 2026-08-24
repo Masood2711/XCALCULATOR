@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.calculator-container{
+  width:400px;
+  margin:20px auto;
+  text-align:center;
+}
+
+.calculator-container h1{
+  font-size:42px;
+  margin-bottom:45px;
+}
+
+.calculator-container input{
+  width:250px;
+  height:35px;
+  font-size:20px;
+  padding:0 8px;
+  box-sizing:border-box;
+  margin-bottom:10px;
+}
+
+.result{
+  height:35px;
+  font-size:25px;
+  margin-bottom:10px;
+}
+
+.button-container{
+  width:390px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.button-container button{
+  width:82px;
+  height:82px;
+  font-size: 30px;
+  border:2px solid #777;
+  border-radius:12px;
+  cursor:pointer;
+  background:#f2f2f2;
+}
+
+.button-container hover{
+  background-color:#e5e5e5;
+}
